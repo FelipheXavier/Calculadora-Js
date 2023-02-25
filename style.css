@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #82C3EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #59C1BD;
+}
+.display{
+    background-color: #C0DEFF;
+    width: 94%;
+    border-radius: 1rem;
+    height: 5rem;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    font-size: 4rem;
+    padding-right: 1rem;
+    font-family: 'Righteous', cursive;
+}
+.botoes{
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+}
+.limpar{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.igual{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.botoes:nth-child(1){
+    grid-column-start: span 2;
+}
+.tecla{
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border:none;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2rem;
+
+}
+.tecla:hover{
+    background-color: #d8d8d8;
+}
+
